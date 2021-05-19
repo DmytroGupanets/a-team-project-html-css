@@ -6,10 +6,10 @@
 @import './base/common';
 @import './base/container';
 @import './base/section';
+@import './utils/mixin';
 @import './components/button';
 @import './components/logo';
 @import './components/mobile-menu';
-// Стили для файла с примером HTML-фрагмента
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
