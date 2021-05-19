@@ -1,8 +1,57 @@
 .hero {
   background-color: var(--primary-bg-color);
-}
-.hero-title {
-  @include font(38px, 400, 1.16, 0.04em);
-  text-transform: uppercase;
-  color: #ffffff;
+
+  &__title {
+    font-family: 'Titan One' sans-serif;
+    @include font(22px, 400, 1.14, 0.04em);
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @media screen and(min-width: 768px) {
+      & {
+        @include font(26px, 400, 1.15, 0.04em);
+      }
+    }
+    @media screen and(min-width: 1200px) {
+      & {
+        @include font(38px, 400, 1.16, 0.04em);
+      }
+    }
+  }
+
+  &__accent-title {
+    font-family: Titan One;
+    @include font(48px, 400, 0.965, 0.04em);
+    text-transform: uppercase;
+    color: #d41443;
+
+    @media screen and(min-width: 767px) {
+      & {
+        @include font(34px, 400, 0.905, 0.04em);
+      }
+    }
+
+    @media screen and(min-width: 767px) {
+      & {
+        @include font(58px, 400, 0.905, 0.04em);
+      }
+    }
+  }
+
+  &__btn-list {
+    display: flex;
+  }
+  &__btn-item:not(:last-child) {
+    margin-right: 9px;
+    @media screen and(min-width: 768px) {
+      & {
+        margin-right: 8px;
+      }
+    }
+    @media screen and(min-width: 1200px) {
+      & {
+        margin-right: 15px;
+      }
+    }
+  }
 }

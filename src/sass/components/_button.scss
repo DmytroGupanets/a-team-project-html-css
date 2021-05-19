@@ -10,3 +10,35 @@
   width: 10px;
   height: 10px;
 }
+
+.button {
+  @include font(8px, 400, 1.25, 0.04em);
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d41443;
+  border-radius: 20px;
+  width: 62px;
+  height: 24px;
+  border: none;
+
+  @media screen and(min-width: 1200px) {
+    & {
+      @include font(14px, 400, 1.29, 0.04em);
+      width: 104px;
+      height: 40px;
+    }
+  }
+}
+
+.button-white {
+  width: 82px;
+  color: #d41443;
+  background-color: #ffffff;
+
+  @media screen and(min-width: 1200px) {
+    & {
+      width: 138px;
+    }
+  }
+}
