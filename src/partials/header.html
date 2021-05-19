@@ -3,7 +3,34 @@
     <nav class="navigation">
       <a href="./index.html" class="logo">
       <img src="./images/logo.svg" alt="logo">
+      <ul class="menu list">
+        <li class="menu__item">
+          <a href="" class="menu__link link">Home</a></li>
+        <li class="menu__item">
+          <a href="" class="menu__link link">About us</a></li>
+        <li class="menu__item">
+          <a href="" class="menu__link link">How it’s made?</a></li>
+        <li class="menu__item">
+          <a href="" class="menu__link link">Our products</a></li>
+        <li class="menu__item">
+          <a href="" class="menu__link link">Contact</a></li>
+      </ul>
     </nav>
-
-  </div>
+    <div class="mobile-menu is-hidden" data-menu>
+    <button class="mobile-button" type="button" >
+      <svg class="mobile-icon">
+        <use href="./images/sprite.svg#burger"></use>
+      </svg>
+    </button>
+    </div>
+    <button class="header-button" type="button">Buy now
+      <svg class="button-icon">
+        <use href="./images/sprite.svg#arrow"></use>
+      </svg>
+    </button>     
+    <button class="mobile-menu__close" type="button" data-menu-close>
+      <svg class="mobile-icon-close">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
 </header>

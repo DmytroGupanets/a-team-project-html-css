@@ -1,3 +1,34 @@
 .header {
-  background: var(--primary-bg-color);
+  background: rgba(225, 121, 146, 1);
+}
+.menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  &__item {
+    border: 1px solid #e18298;
+    padding: 12px 20px;
+  }
+  &__link {
+    @include font(14px, 700, 1.28, 0.03em);
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+      color: rgba(212, 20, 67, 1);
+    }
+  }
+}
+.button-icon {
+  width: 4px;
+  height: 8px;
+}
+.mobile-icon {
+  width: 20px;
+  height: 12px;
+}
+.mobile-icon-close {
+  width: 14px;
+  height: 14px;
+  background-color: rgba(225, 121, 146, 1);
 }
