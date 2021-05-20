@@ -24,12 +24,22 @@
   }
   .header__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .menu {
   display: none;
   @media screen and (min-width: 1280px) {
     display: inline-flex;
+    &__item:not(:last-child) {
+      margin-right: 35px;
+    }
     &__link {
       @include font(14px, 700, 1.28, 0.03em);
       color: var(--primary-text-color);
