@@ -1,0 +1,253 @@
+// Visually hidden to be addded at common.scss
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-location {
+  background-image: linear-gradient(to bottom, #ffffff 6%, var(--secondary-bg-color) 6%);
+  padding-bottom: 113px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 158px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 165px;
+    background-color: var(--secondary-bg-color);
+    background-image: url(../images/location/location-bg-desktop-1x.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 1280px 382px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/location/location-bg-desktop-2x.png);
+    }
+  }
+}
+
+.location-container {
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    padding-top: 556px;
+  }
+}
+
+// Our branch cards
+.branch-cards__list {
+  margin-bottom: 54px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-18%);
+
+    margin-bottom: 0;
+  }
+}
+
+.branch-card {
+  padding: 43px 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: var(--primary-text-color);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 32px;
+    flex-basis: calc((100% - 40px) / 3);
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 62px 44px;
+    flex-basis: calc((100% - 60px) / 3);
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.branch-card__type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+  width: 80px;
+  height: 16px;
+
+  background-color: #f0d1a5;
+  border-radius: 4px;
+
+  @include font(12px, 500, 1.86, 0.04em);
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.branch-card__type--green {
+  width: 130px;
+  background-color: #c2e297;
+}
+
+.branch-card__place {
+  margin-bottom: 10px;
+
+  @include font(12px, 500, 1.86, 0.04em);
+  color: #000000;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.branch-card__description {
+  margin-bottom: 25px;
+
+  @include font(12px, 500, 1.5, 0.04em);
+  color: #907e82;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+// Our Branch working hours
+.branch-card__working-hours {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.branch-card__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.branch-card__weekdays {
+  display: block;
+  @include font(12px, 500, 1.86, 0.03em);
+  color: #000000;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.branch-card__hours {
+  @include font(12px, 500, 1.86, 0.04em);
+  color: var(--secondary-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+// Our Branch card contacts
+.branch-card__contacts-list {
+  margin-top: 25px;
+}
+
+.branch-card__contacts {
+  @include font(12px, 500, 1.5, 0.04em);
+  color: #907e82;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+// Our location buttons
+.locations__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.locations__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.location__button {
+  padding: 13px 30px;
+  border-style: none;
+  border-radius: 22px;
+  background-color: #d41342;
+  @include font(16px, 700, 1.31, 0.03em);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.location__button-white {
+  padding: 13px 30px;
+  border-style: none;
+  border-radius: 22px;
+  background-color: var(--primary-text-color);
+  @include font(16px, 700, 1.31, 0.03em);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.locations__btn-icon {
+  margin-left: 8px;
+  width: 7px;
+  height: 10px;
+}
