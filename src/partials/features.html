@@ -2,9 +2,6 @@
     <div class="container about__container">
         <p class="section__suptitle">tradition and love</p>
         <h2 class="section__title">how it’s made?</h2>
-
-        
-        <div class="about-box-description">
             <picture>
                 <source srcset="./images/about/about-image-desktop.webp 1x, ./images/about/about-image-desktop@2x.webp 2x"
                     media="(min-width: 1280px)" type="image/webp">
@@ -17,20 +14,22 @@
                     media="(min-width: 768px)">
             
                 <source srcset="./images/about/about-image-mobile.webp 1x, ./images/about/about-image-mobile@2x.webp 2x"
-                    media="(min-width: 480px)" type="image/webp">
+                    media="(min-width: 320px)" type="image/webp">
                 <source srcset="./images/about/about-image-mobile.png 1x, ./images/about/about-image-mobile@2x.png 2x"
-                    media="(min-width: 480px)">
+                    media="(min-width: 320px)">
             
-                <img src="./images/about/about-image-mobile.png" alt="milk-and-cow">
+                <img class="about__image" src="./images/about/about-image-mobile.png" alt="milk-and-cow">
             </picture>
-            <div>
-                <h3 class="about-box-description__title">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
-                Maecenas eleifend erat at justo fringilla.</h3>
+            <div class="about-box-description">
+
+                <p class="about-box-description__text about-box-description__text_color">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+                Maecenas eleifend erat at justo fringilla.</p>
+
                 <p class="about-box-description__text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
                 Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
                 <p class="about-box-description__text">Aliquam erat volutpat. Aenean accumsan.</p>
+                <button type="button" class="about__button">Read more</button>
             </div>
         </div>
-        <button type="button" class="about__button">Read more</button>
     </div>
 </section>
