@@ -178,6 +178,9 @@
   //   РАЗМЕТКА ПОД ТАБЛЕТ
 
   @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+
     &__title {
       @include font(48px, 400, 1.15, 0.04em);
       margin-bottom: 150px;
@@ -217,6 +220,9 @@
   //   РАЗМЕТКА ПОД ДЕСКТОП
 
   @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+
     &__title {
       @include font(58px, 400, 1.14, 0.06em);
       margin-bottom: 259px;
