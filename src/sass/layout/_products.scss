@@ -1,0 +1,140 @@
+.product {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  text-align: center;
+
+  &__title {
+    font-family: Titan One, sans-serif;
+    @include font(34px, 400, 1.15, 0.04em);
+    margin-bottom: 144px;
+    text-transform: uppercase;
+
+    color: #d41443;
+
+    &-lable {
+      font-family: Titan One, sans-serif;
+      @include font(18px, 400, 1.17, 0);
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      color: #ffa5ba;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -130px;
+  }
+
+  &__item {
+    background: #f0d1a5;
+    border-radius: 24px;
+    margin-top: 130px;
+    padding-top: 161px;
+    padding-bottom: 41px;
+    flex-basis: calc(100%);
+
+    &:first-of-type {
+      background: #ffb8ca;
+    }
+    &:last-of-type {
+      background: #c2e297;
+    }
+  }
+
+  &__subtitle {
+    font-family: Titan One, sans-serif;
+    @include font(20px, 400, 1.15, 0.04em);
+    margin-bottom: 66px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__text {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    font-family: DM Sans, sans-serif;
+    @include font(14px, 700, 1.52, 0.04em);
+    color: #ffffff;
+  }
+
+  &__btn {
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+  }
+
+  //   РАЗМЕТКА ПОД ТАБЛЕТ
+
+  @media screen and (min-width: 768px) {
+    &__title {
+      @include font(48px, 400, 1.15, 0.04em);
+      margin-bottom: 150px;
+
+      &-lable {
+        @include font(26px, 400, 1.15, 0);
+      }
+    }
+
+    &__list {
+      margin-left: -20px;
+      margin-top: -20px;
+    }
+
+    &__item {
+      margin-left: 20px;
+      margin-top: 20px;
+      padding-top: 152px;
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    &__text {
+      padding-right: 11px;
+      padding-left: 11px;
+      margin-bottom: 40px;
+      @include font(14px, 700, 1.76, 0.04em);
+    }
+  }
+
+  //   РАЗМЕТКА ПОД ДЕСКТОП
+
+  @media screen and (min-width: 1200px) {
+    &__title {
+      @include font(58px, 400, 1.14, 0.06em);
+      margin-bottom: 259px;
+
+      &-lable {
+        @include font(30px, 400, 1.13, 0.04em);
+      }
+    }
+
+    &__list {
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+
+    &__item {
+      margin-left: 30px;
+      margin-top: 30px;
+      padding-top: 163px;
+      padding-bottom: 50px;
+      flex-basis: calc((100% - 90px) / 3);
+    }
+
+    &__subtitle {
+      @include font(30px, 400, 1.13, 0.04em);
+      margin-bottom: 70px;
+    }
+
+    &__text {
+      padding-right: 45px;
+      padding-left: 45px;
+      margin-bottom: 62px;
+      @include font(16px, 700, 1.76, 0.04em);
+    }
+  }
+}
