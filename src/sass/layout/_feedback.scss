@@ -1,0 +1,35 @@
+.feedback {
+  &__text {
+    @include font(12px, 500, 2.55, 0.04em);
+    color: #000000;
+    max-width: 160px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      @include font(14px, 500, 2.16, 0.04em);
+      max-width: 460px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(16px, 500, 1.86, 0.04em);
+      max-width: 750px;
+    }
+  }
+
+  &__city {
+    @include font(14px, 500, 1.86, 0.04em);
+    color: #000000;
+    // перебивает белый цвет
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      @include font(16px, 500, 1.86, 0.04em);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(20px, 500, 1.86, 0.04em);
+    }
+  }
+}
