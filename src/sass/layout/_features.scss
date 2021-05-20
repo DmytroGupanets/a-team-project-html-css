@@ -19,16 +19,14 @@
 }
 
 .about__section {
+  padding-top: 126px;
+  padding-bottom: 20px;
   background-color: var(--secondary-bg-color);
-}
-
-.about-box-description {
-  @include font(12px, 500, 1.62, 0.03em);
-  margin-bottom: 18px;
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/about-background-image-mobile.png);
-    background-position: 0 100%;
+    background-position: center bottom 60px;
     background-repeat: no-repeat;
+    background-size: 100% 133px;
     // background-size: cover;
   }
   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -39,25 +37,24 @@
     background-repeat: no-repeat;
   }
 
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/about/about-background-image-desktop.png);
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    // background-size: cover;
-  }
-  @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
-    (min-resolution: 192dpi) and (min-width: 1280px),
-    (min-resolution: 2dppx) and (min-width: 1280px) {
-    background-image: url(../images/about/about-background-image-desktop@2x.png);
-  }
+  // @media screen and (min-width: 1280px) {
+  //   background-image: url(../images/about/about-background-image-desktop.png);
+  //   // background-position: 0 100%;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+  // @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  //   (min-resolution: 192dpi) and (min-width: 1280px),
+  //   (min-resolution: 2dppx) and (min-width: 1280px) {
+  //   background-image: url(../images/about/about-background-image-desktop@2x.png);
+  // }
+}
+.about__image {
+  margin-bottom: 46px;
+}
 
-  &__title {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 32px;
-    text-align: left;
-    color: #000000;
-  }
+.about-box-description {
+  @include font(12px, 500, 1.62, 0.03em);
 
   &__text {
     padding-left: 30px;
@@ -66,15 +63,20 @@
     text-align: left;
     color: #907e82;
   }
+
+  &__text_color {
+    margin-bottom: 32px;
+    color: #000000;
+  }
 }
-// .about__button {
-//   color: var(--accent-color);
-//   background-color: var(--primary-text-color);
-//   @include font(14px, 700, 1.28, 0.03em);
-//   width: 176px;
-//   height: 44px;
-//   border: none;
-//   border-radius: 22px;
-//   margin-left: 30px;
-//   align-self: center;
-// }
+
+.about__button {
+  margin-top: 18px;
+  color: var(--accent-color);
+  background-color: var(--primary-text-color);
+  @include font(14px, 700, 1.28, 0.03em);
+  width: 176px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+}
