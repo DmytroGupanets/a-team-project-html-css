@@ -67,7 +67,7 @@
       height: 252px;
       top: 0;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -45%);
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -90,7 +90,7 @@
           }
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
           background-image: url('../images/products/icecreame-product-desktop.png');
 
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -118,7 +118,7 @@
           }
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
           background-image: url('../images/products/icecoffee-product-desktop.png');
 
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -146,7 +146,7 @@
           }
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
           background-image: url('../images/products/milkshakes-product-desktop.png');
 
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -216,7 +216,7 @@
 
   //   РАЗМЕТКА ПОД ДЕСКТОП
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     &__title {
       @include font(58px, 400, 1.14, 0.06em);
       margin-bottom: 259px;
@@ -252,6 +252,9 @@
       &::before {
         width: 335px;
         height: 335px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -63%);
       }
     }
 
