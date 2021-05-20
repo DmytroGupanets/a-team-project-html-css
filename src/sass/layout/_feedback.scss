@@ -1,27 +1,50 @@
+* {
+  outline: 1px solid red;
+}
 .feedback {
   &__text {
+    display: inline-block;
     @include font(12px, 500, 2.55, 0.04em);
     color: #000000;
-    max-width: 160px;
-    margin: 0 auto;
+    padding: 43px 66px 26px 57px;
+    background-color: #fafafa;
     text-align: center;
+    margin: 0 auto 30px;
 
     @media screen and (min-width: 768px) {
       @include font(14px, 500, 2.16, 0.04em);
-      max-width: 460px;
+      width: 620px;
+      height: 164px;
+      margin-bottom: 0 auto 24px;
     }
 
     @media screen and (min-width: 1280px) {
       @include font(16px, 500, 1.86, 0.04em);
-      max-width: 750px;
+      width: 926px;
+      height: 138px;
+      margin-bottom: 15px;
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 54px;
+      height: 40px;
+      margin-left: 61px;
+      margin-top: 28px;
+      background-image: url('../images/kavychki.svg');
+      @media screen and (min-width: 1280px) {
+        margin-left: 50px;
+        margin-top: 32px;
+      }
     }
   }
 
   &__city {
     @include font(14px, 500, 1.86, 0.04em);
     color: #000000;
-    // перебивает белый цвет
     margin: 0 auto;
+    padding-bottom: 128px;
+    // через mb 30 тут будет еще домик-svg
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -30,6 +53,36 @@
 
     @media screen and (min-width: 1280px) {
       @include font(20px, 500, 1.86, 0.04em);
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 4px;
+      background-image: url('../images/troetochie.svg');
+      margin: 0 auto;
+      margin-bottom: 18px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__testimonial {
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 29px;
+    @media screen and (min-width: 768px) {
+      margin-top: 121px;
+      margin-bottom: 19px;
     }
   }
 }
