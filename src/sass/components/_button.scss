@@ -1,11 +1,12 @@
 .header-button {
-  color: var(--accent-color);
-  @include font(16px, 700, 1.31, 0.03em);
-  width: 209px;
-  height: 44px;
-  border-radius: 22px;
-  margin-right: 16px;
-  border: none;
+  display: none;
+  // color: var(--accent-color);
+  // @include font(16px, 700, 1.31, 0.03em);
+  // width: 209px;
+  // height: 44px;
+  // border-radius: 22px;
+  // margin-right: 16px;
+  // border: none;
 }
 .button-icon {
   width: 10px;

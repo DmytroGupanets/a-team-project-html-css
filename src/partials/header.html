@@ -16,21 +16,46 @@
           <a href="" class="menu__link link">Contact</a></li>
       </ul>
     </nav>
-    <div class="mobile-menu is-hidden" data-menu>
-    <button class="mobile-button" type="button" >
+    <button class="header-button" type="button">Buy now
+      <svg class="button-icon">
+        <use href="./images/sprite.svg#arrow"></use>
+      </svg>
+    </button>
+    <button class="header__mobile-menu-btn" type="button" data-menu-button>
       <svg class="mobile-icon">
         <use href="./images/sprite.svg#burger"></use>
       </svg>
     </button>
     </div>
-    <button class="header-button" type="button">Buy now
-      <svg class="button-icon">
-        <use href="./images/sprite.svg#arrow"></use>
-      </svg>
-    </button>     
-    <button class="mobile-menu__close" type="button" data-menu-close>
-      <svg class="mobile-icon-close">
-        <use href="./images/sprite.svg#close"></use>
-      </svg>
-    </button>
+    <div class="mobile-menu is-hidden" data-menu>
+      <button class="mobile-menu-close" type="button" data-menu-close>
+        <svg class="mobile-icon-close">
+          <use href="./images/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="container mobile-menu__container">
+        <button class="mobile-menu-btn" type="button">Buy now
+          <svg class="mobile-btn-icon">
+            <use href="./images/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link">About us</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link">Our products</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 </header>
