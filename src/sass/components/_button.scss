@@ -22,7 +22,12 @@
   height: 24px;
   border: none;
 
-  @media screen and(min-width: 1200px) {
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  @media screen and(min-width: 1280px) {
     & {
       @include font(14px, 400, 1.29, 0.04em);
       width: 104px;
@@ -35,6 +40,12 @@
   width: 82px;
   color: #d41443;
   background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: #d41443;
+  }
 
   @media screen and(min-width: 1200px) {
     & {
