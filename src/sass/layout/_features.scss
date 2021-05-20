@@ -35,13 +35,15 @@
     (min-resolution: 192dpi) and (max-width: 767px),
     (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: url(../images/about/about-background-image-mobile@2x.png);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/about/about-background-image-desktop.png);
-    // background-position: 0 100%;
+    background-position: 0 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
     (min-resolution: 192dpi) and (min-width: 1280px),
@@ -65,14 +67,14 @@
     color: #907e82;
   }
 }
-.about__button {
-  color: var(--accent-color);
-  background-color: var(--primary-text-color);
-  @include font(14px, 700, 1.28, 0.03em);
-  width: 176px;
-  height: 44px;
-  border: none;
-  border-radius: 22px;
-  margin-left: 30px;
-  align-self: center;
-}
+// .about__button {
+//   color: var(--accent-color);
+//   background-color: var(--primary-text-color);
+//   @include font(14px, 700, 1.28, 0.03em);
+//   width: 176px;
+//   height: 44px;
+//   border: none;
+//   border-radius: 22px;
+//   margin-left: 30px;
+//   align-self: center;
+// }
