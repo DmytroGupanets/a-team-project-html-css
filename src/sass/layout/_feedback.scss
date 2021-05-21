@@ -1,12 +1,22 @@
 .feedback {
+  &__text-block {
+    padding: 71px 50px 20px;
+    background-color: #fafafa;
+    margin-bottom: 30px;
+  }
+
   &__text {
     display: inline-block;
+    position: relative;
     @include font(12px, 500, 2.55, 0.04em);
     color: #000000;
-    padding: 43px 66px 26px 57px;
-    background-color: #fafafa;
+    // padding: 43px 66px 26px 57px;
+    // background-color: #fafafa;
     text-align: center;
-    margin: 0 auto 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    // margin: 0 auto 30px;
+    background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
 
     @media screen and (min-width: 768px) {
       @include font(14px, 500, 2.16, 0.04em);
@@ -21,14 +31,21 @@
       height: 138px;
       margin-bottom: 15px;
     }
+
     &::before {
-      content: '';
       display: block;
+      position: absolute;
+      content: '';
       width: 54px;
       height: 40px;
-      margin-left: 61px;
-      margin-top: 28px;
+      // margin-left: 61px;
+      // margin-top: 28px;
+      top: 0;
+      left: 0;
+      transform: translateY(-40%);
+
       background-image: url('../images/kavychki.svg');
+
       @media screen and (min-width: 1280px) {
         margin-left: 50px;
         margin-top: 32px;
