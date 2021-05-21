@@ -1,10 +1,9 @@
 .about__section {
   padding-top: 126px;
-  padding-bottom: 20px;
   background-color: var(--secondary-bg-color);
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/about-background-image-mobile.png);
-    background-position: center bottom 140px;
+    background-position: center bottom 60px;
     background-repeat: no-repeat;
     background-size: 100% 133px;
     // background-size: cover;
@@ -17,7 +16,7 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/about/about-background-image-desktop.png);
-    // background-position: 0 100%;
+
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100% 534px;
@@ -29,7 +28,7 @@
   }
 }
 
-.section {
+.about {
   &__suptitle {
     font-family: 'Titan One', sans-serif;
     @include font(30px, 400, 1.13, 0.04em);
@@ -64,15 +63,15 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: -20px;
     margin-left: -20px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: -38px;
-    margin-left: -38px;
+    margin-top: -30px;
+    margin-left: -30px;
     padding-bottom: 56px;
   }
 }
@@ -92,6 +91,7 @@
   @media screen and (min-width: 1280px) {
     @include font(16px, 500, 1.76, 0.04em);
     margin-bottom: 14px;
+    padding-left: 42px;
   }
 }
 
@@ -99,8 +99,8 @@
   margin-bottom: 32px;
   color: #000000;
 
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-top: 52px;
   }
 }
 
@@ -110,12 +110,6 @@
     margin-left: 20px;
     flex-basis: calc((100% - 40px) / 2);
   }
-
-  @media screen and (min-width: 1280px) {
-    margin-top: 38px;
-    margin-left: 38px;
-    flex-basis: calc((100% - 76px) / 2);
-  }
 }
 
 .about-rigth-side {
@@ -123,12 +117,6 @@
     margin-top: 20px;
     margin-left: 20px;
     flex-basis: calc((100% - 40px) / 2);
-  }
-
-  @media screen and (min-width: 1280px) {
-    // margin-top: 38px;
-    margin-left: 38px;
-    flex-basis: calc((100% - 76px) / 2);
   }
 }
 
@@ -157,6 +145,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    margin-left: 42px;
     margin-top: 44px;
   }
 }
