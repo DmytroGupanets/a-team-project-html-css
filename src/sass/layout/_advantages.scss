@@ -1,0 +1,121 @@
+.advantag {
+  background-color: var(--secondary-bg-color);
+  padding-top: 39px;
+  padding-bottom: 97px;
+  text-align: left;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -38px;
+  }
+
+  &__item {
+    margin-top: 38px;
+    flex-basis: calc(100%);
+  }
+
+  &__subtitle {
+    font-family: 'Titan One', sans-serif;
+    @include font(36px, 400, 1.14, 0.04em);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: #d41443;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 50px;
+      height: 50px;
+      margin-bottom: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.icon-1 {
+      &::before {
+        background-image: url('../images/advantag/icon1-advantag.png');
+      }
+    }
+
+    &.icon-2 {
+      &::before {
+        background-image: url('../images/advantag/icon2-advantag.png');
+      }
+    }
+
+    &.icon-3 {
+      &::before {
+        background-image: url('../images/advantag/icon3-advantag.png');
+      }
+    }
+  }
+
+  &__text {
+    @include font(12px, 700, 1.7, 0);
+    color: #000000;
+    max-width: 230px;
+  }
+
+  //   РАЗМЕТКА ПОД ТАБЛЕТ
+
+  @media screen and (min-width: 768px) {
+    padding-top: 66px;
+    padding-bottom: 140px;
+
+    &__list {
+      margin-top: -60px;
+      margin-left: -60px;
+    }
+
+    &__item {
+      margin-top: 60px;
+      margin-left: 60px;
+      flex-basis: calc((100% - 180px) / 3);
+    }
+
+    &__subtitle {
+      @include font(48px, 400, 1.15, 0.04em);
+
+      &::before {
+        margin-bottom: 36px;
+      }
+    }
+
+    &__text {
+      @include font(14px, 700, 1.74, 0);
+      max-width: 180px;
+    }
+  }
+
+  //   РАЗМЕТКА ПОД ДЕСКТОП
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 0px;
+    padding-bottom: 140px;
+
+    &__list {
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+
+    &__item {
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc((100% - 90px) / 3);
+    }
+
+    &__subtitle {
+      @include font(58px, 400, 1.14, 0.04em);
+
+      &::before {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__text {
+      @include font(16px, 700, 1.7, 0.02em);
+      max-width: 330px;
+    }
+  }
+}
