@@ -1,37 +1,83 @@
 .feedback {
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 121px;
+    padding-bottom: 35px;
+  }
+
+  &__testimonial {
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &__text {
     display: inline-block;
+    z-index: 35;
     @include font(12px, 500, 2.55, 0.04em);
     color: #000000;
-    padding: 43px 66px 26px 57px;
-    background-color: #fafafa;
     text-align: center;
-    margin: 0 auto 30px;
+    padding: 0 12px;
+    background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
 
     @media screen and (min-width: 768px) {
       @include font(14px, 500, 2.16, 0.04em);
-      width: 620px;
-      height: 164px;
-      margin-bottom: 0 auto 24px;
+      padding-left: 20px;
+      padding-right: 44px;
     }
 
     @media screen and (min-width: 1280px) {
       @include font(16px, 500, 1.86, 0.04em);
-      width: 926px;
-      height: 138px;
-      margin-bottom: 15px;
+      padding-left: 28px;
+      padding-right: 35px;
     }
+
     &::before {
-      content: '';
       display: block;
+      position: absolute;
+      content: '';
+      z-index: -1;
       width: 54px;
       height: 40px;
-      margin-left: 61px;
-      margin-top: 28px;
+      top: 0;
+      left: 0;
+      transform: translate(110%, 140%);
       background-image: url('../images/kavychki.svg');
+
+      @media screen and (min-width: 768px) {
+        transform: translate(70%, 75%);
+      }
+
       @media screen and (min-width: 1280px) {
-        margin-left: 50px;
-        margin-top: 32px;
+        transform: translate(90%, 80%);
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+      z-index: -1;
+      max-width: 280px;
+      padding: 71px 50px 20px;
+      background-color: #fafafa;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 768px) {
+        max-width: 620px;
+        padding: 47px 36px 28px 60px;
+        background-color: rgba(250, 250, 250, 0.4);
+        margin-bottom: 24px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        max-width: 926px;
+        padding: 47px 54px 32px 59px;
+        background-color: #fafafa;
+        margin-bottom: 15px;
       }
     }
   }
@@ -40,8 +86,6 @@
     @include font(14px, 500, 1.86, 0.04em);
     color: #000000;
     margin: 0 auto;
-    padding-bottom: 128px;
-    // через mb 30 тут будет еще домик-svg
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -51,6 +95,7 @@
     @media screen and (min-width: 1280px) {
       @include font(20px, 500, 1.86, 0.04em);
     }
+
     &::before {
       content: '';
       display: block;
@@ -67,19 +112,6 @@
       @media screen and (min-width: 1280px) {
         margin-bottom: 15px;
       }
-    }
-  }
-
-  &__testimonial {
-    width: 85px;
-    height: 85px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    margin-bottom: 29px;
-    @media screen and (min-width: 768px) {
-      margin-top: 121px;
-      margin-bottom: 19px;
     }
   }
 }
