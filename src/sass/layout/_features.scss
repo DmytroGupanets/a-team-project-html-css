@@ -56,7 +56,7 @@
   }
 }
 
-.about-box-description {
+.about__box-description {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-start;
@@ -72,7 +72,7 @@
   }
 }
 
-.about-box-description__text {
+.about__text {
   @include font(12px, 500, 1.62, 0.03em);
   padding-left: 30px;
   padding-right: 30px;
@@ -91,7 +91,7 @@
   }
 }
 
-.about-box-description__text_color {
+.about__text_color {
   margin-bottom: 32px;
   color: #000000;
 
@@ -100,7 +100,11 @@
   }
 }
 
-.about-left-side {
+.about__left-side {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 46px;
+  }
+
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     margin-left: 20px;
@@ -108,7 +112,16 @@
   }
 }
 
-.about-rigth-side {
+.about__rigth-side {
+  &:first-child {
+    margin-bottom: 32px;
+    color: #000000;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 52px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     margin-left: 20px;
