@@ -1,5 +1,6 @@
 .section-location {
   background-image: linear-gradient(to bottom, #ffffff 6%, var(--secondary-bg-color) 6%);
+
   padding-bottom: 113px;
 
   @media screen and (min-width: 768px) {
@@ -9,40 +10,42 @@
   @media screen and (min-width: 1280px) {
     padding-bottom: 165px;
     background-color: var(--secondary-bg-color);
-    background-image: url(../images/location/location-bg-desktop-1x.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 1280px 382px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/location/location-bg-desktop-2x.png);
-    }
+    background-image: none;
   }
 }
 
 .location-container {
   @media screen and (min-width: 1280px) {
     position: relative;
-    padding-top: 556px;
   }
 }
 
+// Background picture for 1280px resolution
+.picture-thumb {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 174px;
+  }
+}
 // Our branch cards
-.branch-cards__list {
+.branch-cards {
   margin-bottom: 54px;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-left: -20px;
   }
 
   @media screen and (min-width: 1280px) {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-18%);
+    transform: translateY(-124%);
 
+    margin-left: -30px;
     margin-bottom: 0;
   }
 }
@@ -61,20 +64,16 @@
 
   @media screen and (min-width: 768px) {
     padding: 50px 32px;
-    flex-basis: calc((100% - 40px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
+    margin-left: 20px;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 62px 44px;
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 90px) / 3);
 
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
+    margin-left: 30px;
   }
 }
 
@@ -95,7 +94,7 @@
   color: var(--primary-text-color);
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
+    @include font(16px, 500, 1.86, 0.04em);
   }
 }
 
@@ -111,11 +110,11 @@
   color: #000000;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    @include font(14px, 500, 1.86, 0.04em);
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    @include font(16px, 500, 1.86, 0.04em);
   }
 }
 
@@ -126,11 +125,11 @@
   color: #907e82;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    @include font(14px, 500, 1.5, 0.04em);
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    @include font(16px, 500, 1.5, 0.04em);
   }
 }
 
@@ -152,11 +151,11 @@
   color: #000000;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    @include font(14px, 500, 1.86, 0.03em);
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    @include font(16px, 500, 1.86, 0.03em);
   }
 }
 
@@ -165,11 +164,11 @@
   color: var(--secondary-color);
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    @include font(14px, 500, 1.86, 0.04em);
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    @include font(16px, 500, 1.86, 0.04em);
   }
 }
 
@@ -183,11 +182,11 @@
   color: #907e82;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    @include font(14px, 500, 1.5, 0.04em);
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    @include font(16px, 500, 1.5, 0.04em);
   }
 }
 

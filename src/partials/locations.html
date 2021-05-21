@@ -1,7 +1,31 @@
 <section class="section-location">
+  <div class="picture-thumb">
+    <picture>
+      <source
+        srcset="
+          ./images/location/location-bg-desktop-1x.webp 1280w,
+          ./images/location/location-bg-desktop-2x.webp 2560w
+        "
+        type="image/webp"
+        media="(min-width: 1280px)"
+        sizes="(min-width: 1280px) 1280px, 100vw"
+      />
+
+      <source
+        srcset="
+          ./images/location/location-bg-desktop-1x.png 1280w,
+          ./images/location/location-bg-desktop-2x.png 2560w
+        "
+        media="(min-width: 1280px)"
+        sizes="(min-width: 1280px) 1280px, 100vw"
+      />
+
+      <img src="./images/location/location-bg-desktop-1x.png" alt="background image" />
+    </picture>
+  </div>
   <div class="location-container container">
     <h2 class="visually-hidden">Our Cafe branch locations</h2>
-    <ul class="branch-cards__list list">
+    <ul class="branch-cards list">
       <li class="branch-card">
         <p class="branch-card__type">cafe</p>
         <p class="branch-card__place">Chicago</p>
