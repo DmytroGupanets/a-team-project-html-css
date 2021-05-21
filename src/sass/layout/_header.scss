@@ -120,10 +120,10 @@
 .mobile-btn-icon {
   width: 10px;
   height: 10px;
-  fill: var(--accent-color);
+  stroke: var(--accent-color);
   .mobile-menu-btn:hover &,
   .mobile-menu-btn:focus & {
-    fill: currentColor;
+    stroke: #ffffff;
   }
 }
 .mobile-icon {

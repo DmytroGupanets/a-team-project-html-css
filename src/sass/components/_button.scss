@@ -12,11 +12,21 @@
     border-radius: 22px;
     margin-right: 16px;
     border: none;
+    &:hover,
+  &:focus {
+    color: var(--primary-text-color);
+    background-color: #d41443;
+  }
   }
 }
 .button-icon {
   width: 10px;
   height: 10px;
+   stroke: var(--accent-color);
+  .header-button:hover &,
+  .header-button:focus & {
+    stroke: #ffffff;
+  }
 }
 
 .button {
