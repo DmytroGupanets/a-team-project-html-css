@@ -211,28 +211,5 @@
   }
 }
 
-.location__button {
-  padding: 13px 30px;
-  border-style: none;
-  border-radius: 22px;
-  background-color: #d41342;
-  @include font(16px, 700, 1.31, 0.03em);
-  color: var(--primary-text-color);
-  cursor: pointer;
-}
-
-.location__button-white {
-  padding: 13px 30px;
-  border-style: none;
-  border-radius: 22px;
-  background-color: var(--primary-text-color);
-  @include font(16px, 700, 1.31, 0.03em);
-  color: var(--accent-color);
-  cursor: pointer;
-}
-
-.locations__btn-icon {
-  margin-left: 8px;
-  width: 7px;
-  height: 10px;
-}
+// ?у карточек есть
+// border: 1px solid rgba(225, 225, 225, 1)
