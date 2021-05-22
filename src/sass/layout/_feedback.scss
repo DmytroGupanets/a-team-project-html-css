@@ -115,6 +115,15 @@
     }
   }
 }
-.slick-next:before {
-  color: blue;
+.slick-dots li button:before {
+  font-size: 14px;
+}
+.slick-dots li.slick-active button:before {
+  content: ' ';
+  background-image: url(../images/home.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  width: 13px;
+  height: 12px;
 }
