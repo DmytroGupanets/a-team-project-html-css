@@ -118,13 +118,13 @@
     }
   }
 }
-.slick-dots {
+.feedback__container .slick-dots {
   left: -5px;
 }
-.slick-dots li button:before {
+.feedback__container .slick-dots li button:before {
   font-size: 14px;
 }
-.slick-dots li.slick-active button:before {
+.feedback__container .slick-dots li.slick-active button:before {
   content: ' ';
   background-image: url(../images/home.svg);
   background-size: cover;
