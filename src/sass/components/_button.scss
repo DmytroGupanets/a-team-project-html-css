@@ -7,22 +7,23 @@
     cursor: pointer;
     color: var(--accent-color);
     @include font(16px, 700, 1.31, 0.03em);
-    width: 209px;
+    // width: 209px;
+    width: 160px;
     height: 44px;
     border-radius: 22px;
     margin-right: 16px;
     border: none;
     &:hover,
-  &:focus {
-    color: var(--primary-text-color);
-    background-color: #d41443;
-  }
+    &:focus {
+      color: var(--primary-text-color);
+      background-color: #d41443;
+    }
   }
 }
 .button-icon {
   width: 10px;
   height: 10px;
-   stroke: var(--accent-color);
+  stroke: var(--accent-color);
   .header-button:hover &,
   .header-button:focus & {
     stroke: #ffffff;
@@ -31,7 +32,6 @@
 
 .button {
   @include font(8px, 400, 1.25, 0.04em);
-  font-weight: normal;
   text-align: center;
   color: #ffffff;
   background-color: #d41443;
@@ -39,6 +39,7 @@
   width: 62px;
   height: 24px;
   border: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -65,9 +66,72 @@
     color: #d41443;
   }
 
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: 1280px) {
     & {
       width: 138px;
     }
   }
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  color: var(--accent-color);
+  background-color: var(--primary-text-color);
+  @include font(14px, 700, 1.28, 0.03em);
+  width: 176px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+    margin-top: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 42px;
+    margin-top: 44px;
+  }
+}
+
+.about-button__icon {
+  width: 8px;
+  height: 16px;
+  margin-left: 14px;
+}
+
+.location__button {
+  padding: 13px 30px;
+  border-style: none;
+  border-radius: 22px;
+  background-color: #d41342;
+  @include font(16px, 700, 1.31, 0.03em);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.location__button-white {
+  padding: 13px 30px;
+  border-style: none;
+  border-radius: 22px;
+  background-color: var(--primary-text-color);
+  @include font(16px, 700, 1.31, 0.03em);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.locations__btn-icon {
+  margin-left: 8px;
+  width: 7px;
+  height: 10px;
 }

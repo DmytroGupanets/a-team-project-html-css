@@ -1,19 +1,19 @@
 .hero {
-  overflow: hidden;
+  overflow-x: hidden;
 
   @media screen and (max-width: 767px) {
     & {
-      height: 502px;
+      height: 442px;
     }
   }
   @media screen and (min-width: 768px) {
     & {
-      height: 399px;
+      height: 311px;
     }
   }
   @media screen and (min-width: 1280px) {
     & {
-      height: 665px;
+      height: 577px;
     }
   }
   &__bg-base {
@@ -24,17 +24,17 @@
     width: 100vw;
     @media screen and (max-width: 767px) {
       & {
-        height: 502px;
+        height: 442px;
       }
     }
     @media screen and (min-width: 768px) {
       & {
-        height: 399px;
+        height: 311px;
       }
     }
     @media screen and (min-width: 1280px) {
       & {
-        height: 665px;
+        height: 577px;
       }
     }
   }
@@ -42,13 +42,15 @@
     position: relative;
     display: flex;
     @media screen and (max-width: 767px) {
-      padding-top: 83px;
+      height: 442px;
+      // padding-top: 83px;
     }
     @media screen and (min-width: 768px) {
-      padding-top: 31px;
+      // padding-top: 31px;
     }
     @media screen and (min-width: 1280px) {
-      padding-top: 52px;
+      height: 577px;
+      // padding-top: 52px;
     }
   }
   &__left-side {
@@ -57,38 +59,12 @@
       z-index: 5;
     }
   }
-  &__bg-circle {
-    display: inline-block;
-    width: 346px;
-    height: 344px;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-    margin-top: 83px;
-    margin-left: 16px;
-
-    @media screen and (min-width: 768px) {
-      & {
-        margin-left: 39px;
-        width: 324px;
-        height: 322px;
-        margin-top: 31px;
-      }
-    }
-    @media screen and (min-width: 1280px) {
-      & {
-        margin-left: 0;
-        width: 538px;
-        height: 538px;
-        margin-top: 52px;
-      }
-    }
-  }
 
   // TEXT ELEMENTS
 
   &__title {
     max-width: 180px;
-    margin-top: 193px;
+    margin-top: 137px;
     margin-bottom: 19px;
     // z-index: 3;
     font-family: 'Titan One', sans-serif;
@@ -99,14 +75,14 @@
     @media screen and(min-width: 768px) {
       & {
         @include font(22px, 400, 1.14, 0.04em);
-        margin-top: 102px;
+        margin-top: 15px;
       }
     }
     @media screen and(min-width: 1280px) {
       & {
         max-width: 280px;
         @include font(38px, 400, 1.16, 0.04em);
-        margin-top: 171px;
+        margin-top: 84px;
       }
     }
   }
@@ -141,6 +117,11 @@
         display: none;
       }
     }
+    // @media screen and(min-width: 1280px) {
+    //   & {
+    //     width: 188px;
+    //   }
+    // }
   }
   &__description {
     display: inline-block;
@@ -157,7 +138,7 @@
     @media screen and (min-width: 1280px) {
       & {
         margin-left: 30px;
-        max-width: 200px;
+        max-width: 160px;
         @include font(14px, 400, 1.4, 0.03em);
       }
     }
@@ -167,8 +148,12 @@
       display: block;
       width: 18px;
       height: 18px;
-      background-color: #ffffff;
       border-radius: 50%;
+      background-color: #ffffff;
+      background-image: url('../images/hero/hero-arrow-right.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0;
       margin-top: 7px;
       margin-bottom: 6px;
       @media screen and (min-width: 1280px) {
@@ -218,7 +203,7 @@
 
   &__icecream-img {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     bottom: 0;
     right: 32px;
     @media screen and(min-width: 768px) {
@@ -245,19 +230,46 @@
     }
   }
 
-  // NUMBERS right side
+  // RIGHT SIDE - CIRCLE & NUMBERS
   &__right-side {
     display: flex;
   }
+  &__bg-circle {
+    display: inline-block;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    // margin-top: 83px;
+    margin-left: 16px;
+    margin-top: 27px;
+
+    @media screen and (min-width: 768px) {
+      & {
+        margin-left: 39px;
+        width: 324px;
+        height: 311px;
+        // margin-top: 31px;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      & {
+        margin-left: 0;
+        width: 538px;
+        height: 538px;
+        // margin-top: 52px;
+      }
+    }
+  }
   &__number-wrapper {
-    margin-top: 94px;
+    margin-top: 12px;
     margin-left: 103px;
     display: flex;
     flex-direction: column;
     @media screen and (min-width: 1280px) {
       & {
         margin-left: 170px;
-        margin-top: 156px;
+        margin-top: 74px;
       }
     }
   }

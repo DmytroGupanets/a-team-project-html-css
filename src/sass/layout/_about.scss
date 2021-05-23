@@ -141,39 +141,3 @@
     flex-basis: calc((100% - 40px) / 2);
   }
 }
-
-.about__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 18px;
-  color: var(--accent-color);
-  background-color: var(--primary-text-color);
-  @include font(14px, 700, 1.28, 0.03em);
-  width: 176px;
-  height: 44px;
-  border: none;
-  border-radius: 22px;
-
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-    line-height: 1.31;
-    margin-top: 62px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 42px;
-    margin-top: 44px;
-  }
-}
-
-.about-button__icon {
-  width: 8px;
-  height: 16px;
-  margin-left: 14px;
-}
