@@ -30,3 +30,7 @@ body {
   font-family: var(--primary-font-family);
   font-style: var(--primary-font-style);
 }
+
+.locations-modal-open {
+  overflow: hidden;
+}
