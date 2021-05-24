@@ -20,6 +20,8 @@
     background-color: var(--primary-bg-color);
     display: block;
     width: 100%;
+    overflow: hidden;
+
     @media screen and (max-width: 767px) {
       & {
         height: 442px;
@@ -37,15 +39,10 @@
     display: flex;
     @media screen and (max-width: 767px) {
       height: 442px;
-      overflow-x: hidden;
-      // padding-top: 83px;
     }
-    @media screen and (min-width: 768px) {
-      // padding-top: 31px;
-    }
+
     @media screen and (min-width: 1280px) {
       height: 577px;
-      // padding-top: 52px;
     }
   }
   &__left-side {
@@ -61,8 +58,9 @@
     max-width: 180px;
     margin-top: 137px;
     margin-bottom: 19px;
-    // z-index: 3;
+
     font-family: var(--accent-font-family);
+
     @include font(22px, 400, 1.14, 0.04em);
     text-transform: uppercase;
     color: var(--primary-text-color);
@@ -235,7 +233,7 @@
     height: 344px;
     border-radius: 50%;
     background-color: var(--secondary-color);
-    // margin-top: 83px;
+
     margin-left: 16px;
     margin-top: 27px;
 

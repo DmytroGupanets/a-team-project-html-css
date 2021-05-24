@@ -26,12 +26,13 @@ img {
 }
 
 body {
-  height: 100vh;
   font-family: var(--primary-font-family);
   font-style: var(--primary-font-style);
 }
 
-.locations-modal-open {
+.locations-modal-open,
+.franchise-modal-open,
+.about-modal-open {
   overflow: hidden;
 }
 
