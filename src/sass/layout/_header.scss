@@ -76,7 +76,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 12;
+  z-index: 15;
   width: 100%;
   height: 100vh;
   visibility: hidden;
@@ -87,6 +87,7 @@
   transition: all 250ms linear;
   @media screen and (min-width: 768px) {
     max-width: 450px;
+    z-index: 12;
   }
 }
 .mobile-menu.is-open {
