@@ -35,3 +35,7 @@ body {
 .about-modal-open {
   overflow: hidden;
 }
+
+*:focus {
+  outline: 2px solid var(--accent-color);
+}

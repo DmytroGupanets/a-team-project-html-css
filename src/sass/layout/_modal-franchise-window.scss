@@ -237,10 +237,12 @@
   padding-left: 6px;
   padding-right: 6px;
   height: 30px;
+  outline: 1px solid transparent;
 
   &:hover,
   &:focus {
     border: 1px solid var(--accent-color);
+    outline: 1px solid transparent;
   }
 }
 

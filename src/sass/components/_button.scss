@@ -6,9 +6,11 @@
 .button--red {
   background-color: var(--accent-color);
   color: var(--primary-text-color);
+  outline: 2px solid transparent;
   &:hover,
   &:focus {
     background-color: #c7133e;
+    outline: 2px solid transparent;
   }
 }
 .button--white {
