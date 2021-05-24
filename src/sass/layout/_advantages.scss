@@ -16,7 +16,7 @@
   }
 
   &__subtitle {
-    font-family: 'Titan One', sans-serif;
+    font-family: var(--accent-font-family);
     @include font(36px, 400, 1.14, 0.04em);
     margin-bottom: 16px;
     text-transform: uppercase;
@@ -118,4 +118,7 @@
       max-width: 330px;
     }
   }
+}
+* {
+  outline: 1px solid red;
 }

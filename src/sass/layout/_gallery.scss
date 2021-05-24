@@ -1,3 +1,10 @@
-.gallery__section {
-  background-image: linear-gradient(var(--secondary-bg-color) 0 40%, #ffffff 40% 100%);
+.gallery {
+  &__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__section {
+    background-image: linear-gradient(var(--secondary-bg-color) 0 40%, #ffffff 40% 100%);
+  }
 }

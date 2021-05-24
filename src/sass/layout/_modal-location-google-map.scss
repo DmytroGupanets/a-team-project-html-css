@@ -124,7 +124,7 @@
   padding-right: 50px;
   width: 100px;
   height: 40px;
-  font-family: 'Titan One', sans-serif;
+  font-family: var(--accent-font-family);
   @include font(14px, 400, 1.15, 0.02em);
   color: var(--primary-text-color);
   text-transform: uppercase;
@@ -143,7 +143,7 @@
 
   width: 94px;
   height: 40px;
-  font-family: 'Titan One', sans-serif;
+  font-family: var(--accent-font-family);
   @include font(14px, 400, 1.15, 0.04em);
   color: var(--primary-text-color);
   text-transform: uppercase;
@@ -161,7 +161,7 @@
 
   width: 100px;
   height: 40px;
-  font-family: 'Titan One', sans-serif;
+  font-family: var(--accent-font-family);
   @include font(14px, 400, 1.15, 0.02em);
   color: var(--primary-text-color);
   text-transform: uppercase;
