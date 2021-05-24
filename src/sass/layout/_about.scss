@@ -45,8 +45,6 @@
     text-transform: uppercase;
     color: var(--accent-color);
     margin-bottom: 26px;
-    animation: blur 0.75s ease-out infinite;
-    text-shadow: 0px 0px 5px #fff, 0px 0px 7px var(--accent-color);
 
     @media screen and (min-width: 768px) {
       margin-bottom: 50px;
@@ -55,17 +53,6 @@
     @media screen and (min-width: 1280px) {
       margin-bottom: 56px;
     }
-  }
-}
-
-@keyframes blur {
-  from {
-    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
-      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 50px #fff,
-      0px 0px 50px #fff, 0px 0px 50px var(--accent-color), 0px 0px 150px var(--accent-color),
-      0px 10px 100px var(--accent-color), 0px 10px 100px var(--accent-color),
-      0px 10px 100px var(--accent-color), 0px 10px 100px var(--accent-color),
-      0px -10px 100px var(--accent-color), 0px -10px 100px var(--accent-color);
   }
 }
 
