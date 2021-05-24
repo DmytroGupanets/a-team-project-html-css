@@ -93,7 +93,7 @@
 .franchise__title {
   margin-bottom: 20px;
 
-  font-family: 'Titan One', sans-serif;
+  font-family: var(--accent-font-family);
   @include font(28px, 500, 1.15, 0.04em);
   color: var(--accent-color);
   text-transform: uppercase;
@@ -116,7 +116,7 @@
 }
 
 .franchise__company-name {
-  font-family: 'Titan One', sans-serif;
+  font-family: var(--accent-font-family);
   @include font(16px, 500, 1.15, 0.04em);
   color: var(--accent-color);
   text-transform: uppercase;
@@ -274,13 +274,8 @@
 }
 
 .modal-submit__button {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 10px 55px;
-
+  @include font(14px, 400, 1.29, 0.04em);
+  width: 104px;
+  height: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: hidden;
-  cursor: pointer;
 }

@@ -30,7 +30,7 @@
 
 .about {
   &__suptitle {
-    font-family: 'Titan One', sans-serif;
+    font-family: var(--accent-font-family);
     @include font(30px, 400, 1.13, 0.04em);
     text-align: center;
     text-transform: uppercase;
@@ -39,7 +39,7 @@
   }
 
   &__title {
-    font-family: 'Titan One', sans-serif;
+    font-family: var(--accent-font-family);
     @include font(58px, 400, 1.13, 0.04em);
     text-align: center;
     text-transform: uppercase;
@@ -112,7 +112,7 @@
   }
 }
 
-.about__rigth-side {
+.about__right-side {
   &:first-child {
     margin-bottom: 32px;
     color: #000000;

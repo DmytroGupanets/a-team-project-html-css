@@ -4,7 +4,7 @@
   text-align: center;
 
   &__title {
-    font-family: 'Titan One', sans-serif;
+    font-family: var(--accent-font-family);
     @include font(34px, 400, 1.15, 0.04em);
     margin-bottom: 144px;
     text-transform: uppercase;
@@ -12,7 +12,7 @@
     color: #d41443;
 
     &-lable {
-      font-family: 'Titan One', sans-serif;
+      font-family: var(--accent-font-family);
       @include font(18px, 400, 1.17, 0);
       margin-bottom: 15px;
       text-transform: uppercase;
@@ -44,7 +44,7 @@
   }
 
   &__subtitle {
-    font-family: 'Titan One', sans-serif;
+    font-family: var(--accent-font-family);
     @include font(20px, 400, 1.15, 0.04em);
     margin-bottom: 36px;
     text-transform: uppercase;
@@ -167,12 +167,15 @@
   }
 
   &__btn {
-    background-color: transparent;
     height: 40px;
     width: 40px;
     padding: 0;
-    border: none;
     border-radius: 50%;
+
+    &:focus,
+    &:hover {
+      border: 2px solid #d41443;
+    }
   }
 
   //   РАЗМЕТКА ПОД ТАБЛЕТ

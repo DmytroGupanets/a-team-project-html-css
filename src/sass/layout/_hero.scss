@@ -59,7 +59,8 @@
     margin-top: 137px;
     margin-bottom: 19px;
 
-    font-family: 'Titan One', sans-serif;
+    font-family: var(--accent-font-family);
+
     @include font(22px, 400, 1.14, 0.04em);
     text-transform: uppercase;
     color: var(--primary-text-color);
@@ -83,7 +84,7 @@
     display: inline-block;
     max-width: 218px;
     // z-index: 3;
-    font-family: 'Titan One', sans-serif;
+    font-family: var(--accent-font-family);
     @include font(48px, 400, 0.965, 0.04em);
     text-transform: uppercase;
     color: var(--accent-color);
@@ -280,7 +281,7 @@
   &__number {
     position: relative;
     display: inline-block;
-    font-family: 'Titan One', sans-serif;
+    font-family: var(--accent-font-family);
     @include font(28px, 400, 1.14, 0.04em);
     text-transform: uppercase;
     color: var(--accent-color);
