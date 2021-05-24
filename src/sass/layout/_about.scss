@@ -40,17 +40,19 @@
 
   &__title {
     font-family: var(--accent-font-family);
-    @include font(58px, 400, 1.13, 0.04em);
+    @include font(34px, 400, 1.15, 0.04em);
     text-align: center;
     text-transform: uppercase;
     color: var(--accent-color);
     margin-bottom: 26px;
 
     @media screen and (min-width: 768px) {
+      @include font(48px, 400, 1.15, 0.04em);
       margin-bottom: 50px;
     }
 
     @media screen and (min-width: 1280px) {
+      @include font(58px, 400, 1.14, 0.06em);
       margin-bottom: 56px;
     }
   }
