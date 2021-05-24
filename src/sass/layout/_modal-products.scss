@@ -1,22 +1,20 @@
-.about-modal-open {
+.products-modal-open {
   overflow: hidden;
 }
 
-.backdrop.about-backdrop--is-hidden {
+.backdrop.products-backdrop--is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
-.modal-about {
+.modal-products {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80vw;
-  height: 80vh;
-  overflow-y: scroll;
+  width: 60vw;
 
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -25,24 +23,20 @@
   box-sizing: content-box;
   border: 5px solid var(--secondary-color);
 
-  .franchise-backdrop--is-hidden & {
-    transform: translate(-50%, -50%) scale(0.4);
-  }
-
   @media screen and (min-width: 768px) {
+    top: 50%;
     overflow: hidden;
     border-radius: 10px;
-    width: 550px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 700px;
+    top: 50%;
     padding: 40px 40px;
     border-radius: 20px;
   }
 }
 
-.modal-about__close-btn {
+.modal-products__close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,10 +78,10 @@
   pointer-events: none;
 }
 
-.modal-about__title {
+.modal-products__title {
   margin-bottom: 20px;
 
-  font-family: var(--accent-font-family);
+  font-family: 'Titan One', sans-serif;
   @include font(28px, 500, 1.15, 0.04em);
   color: var(--accent-color);
   text-transform: uppercase;
@@ -98,24 +92,35 @@
   }
 }
 
-.modal-about__text,
-.modal-about__description {
+.modal-products__text {
   @include font(14px, 400, 1.15, 0.03em);
   color: #907e82;
 
   margin-bottom: 20px;
 
+  &-caption {
+    @include font(14px, 400, 1.15, 0.03em);
+    color: #907e82;
+
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   @media screen and (min-width: 1280px) {
     @include font(16px, 500, 1.15, 0.04em);
+
+    &-caption {
+      @include font(16px, 500, 1.15, 0.04em);
+      color: #907e82;
+
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 }
 
-.modal-about__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.modal-about__text_bolt {
-  font-family: var(--accent-font-family);
+.modal-products__text_bolt {
+  font-family: 'Titan One', sans-serif;
   @include font(16px, 500, 1.15, 0.04em);
   color: var(--accent-color);
   text-transform: uppercase;
