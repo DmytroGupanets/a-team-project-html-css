@@ -1,0 +1,147 @@
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 22px;
+}
+.button--red {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  outline: 2px solid transparent;
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+    outline: 2px solid transparent;
+  }
+}
+.button--white {
+  color: var(--accent-color);
+  background-color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: var(--accent-color);
+  }
+}
+
+.header__button {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include font(16px, 700, 1.31, 0.03em);
+    width: 160px;
+    height: 44px;
+    margin-right: 16px;
+  }
+}
+
+.header__button-icon {
+  width: 10px;
+  height: 10px;
+  stroke: var(--accent-color);
+  .header-button:hover &,
+  .header-button:focus & {
+    stroke: #ffffff;
+  }
+}
+
+.hero__button-red {
+  @include font(8px, 400, 1.25, 0.04em);
+  text-align: center;
+  border-radius: 20px;
+  width: 62px;
+  height: 24px;
+
+  @media screen and(min-width: 1280px) {
+    & {
+      @include font(14px, 400, 1.29, 0.04em);
+      width: 104px;
+      height: 40px;
+    }
+  }
+}
+
+.hero__button-white {
+  @include font(8px, 400, 1.25, 0.04em);
+  width: 82px;
+  height: 24px;
+
+  @media screen and(min-width: 1280px) {
+    & {
+      @include font(14px, 400, 1.29, 0.04em);
+      width: 138px;
+      height: 40px;
+    }
+  }
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  @include font(14px, 700, 1.28, 0.03em);
+  width: 176px;
+  height: 44px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      @include font(16px, 700, 1.31, 0.03em);
+      margin-top: 62px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      margin-left: 42px;
+      margin-top: 44px;
+    }
+  }
+}
+
+.about__button-icon {
+  width: 8px;
+  height: 16px;
+  margin-left: 14px;
+}
+
+.locations__button {
+  @include font(16px, 700, 1.31, 0.03em);
+  width: 162px;
+  height: 44px;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 192px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 198px;
+    }
+  }
+}
+
+.locations__button-white {
+  @include font(16px, 700, 1.31, 0.03em);
+  width: 162px;
+  height: 44px;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 174px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 180px;
+    }
+  }
+}
+
+.locations__btn-icon {
+  stroke: var(--accent-color);
+  margin-left: 8px;
+  width: 7px;
+  height: 10px;
+}

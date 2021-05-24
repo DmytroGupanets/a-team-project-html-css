@@ -1,0 +1,143 @@
+.feedback {
+  padding-top: 80px;
+  padding-bottom: 86px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 123px;
+    padding-bottom: 234px;
+  }
+
+  &__testimonial {
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    display: inline-block;
+    z-index: 35;
+    @include font(12px, 500, 2.55, 0.04em);
+    color: #000000;
+    text-align: center;
+    padding: 0 12px;
+    background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
+
+    @media screen and (min-width: 768px) {
+      @include font(14px, 500, 2.16, 0.04em);
+      padding-left: 20px;
+      padding-right: 44px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(16px, 500, 1.86, 0.04em);
+      padding-left: 28px;
+      padding-right: 35px;
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+      z-index: -1;
+      width: 54px;
+      height: 40px;
+      top: 0;
+      left: 0;
+      transform: translate(110%, 140%);
+      background-image: url('../images/kavychki.svg');
+
+      @media screen and (min-width: 768px) {
+        transform: translate(70%, 75%);
+      }
+
+      @media screen and (min-width: 1280px) {
+        transform: translate(90%, 80%);
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+      z-index: -1;
+      max-width: 280px;
+      padding: 71px 50px 20px;
+      background-color: #fafafa;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 768px) {
+        max-width: 620px;
+        padding: 47px 36px 28px 60px;
+        background-color: rgba(250, 250, 250, 0.4);
+        margin-bottom: 24px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        max-width: 926px;
+        padding: 47px 54px 32px 59px;
+        background-color: #fafafa;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__city {
+    @include font(14px, 500, 1.86, 0.04em);
+    color: #000000;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      @include font(16px, 500, 1.86, 0.04em);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(20px, 500, 1.86, 0.04em);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 4px;
+      background-image: url('../images/troetochie.svg');
+      margin: 0 auto;
+      margin-bottom: 18px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.feedback__container .slick-dots {
+  left: -5px;
+}
+
+.feedback__container .slick-dots li button {
+  padding: 0;
+}
+
+.feedback__container .slick-dots li button:before {
+  font-size: 14px;
+}
+.feedback__container .slick-dots li.slick-active button:before {
+  content: ' ';
+  background-image: url('../images/home.svg');
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+}

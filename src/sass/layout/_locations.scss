@@ -1,0 +1,212 @@
+.section-location {
+  background-image: linear-gradient(to bottom, #ffffff 6%, var(--secondary-bg-color) 6%);
+
+  padding-bottom: 113px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 158px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 165px;
+    background-color: var(--secondary-bg-color);
+    background-image: none;
+  }
+}
+
+.location-container {
+  @media screen and (min-width: 1280px) {
+    position: relative;
+  }
+}
+
+// Background picture for 1280px resolution
+.picture-thumb {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 174px;
+  }
+}
+// Our branch cards
+.branch-cards {
+  margin-bottom: 54px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: -20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-124%);
+
+    margin-left: -30px;
+    margin-bottom: 0;
+  }
+}
+
+.branch-card {
+  padding: 43px 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: var(--primary-text-color);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 32px;
+    flex-basis: calc((100% - 60px) / 3);
+
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 62px 44px;
+    flex-basis: calc((100% - 90px) / 3);
+
+    margin-left: 30px;
+  }
+}
+
+.branch-card__type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+  width: 80px;
+  height: 16px;
+
+  background-color: #f0d1a5;
+  border-radius: 4px;
+
+  @include font(12px, 500, 1.86, 0.04em);
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(16px, 500, 1.86, 0.04em);
+  }
+}
+
+.branch-card__type--green {
+  width: 130px;
+  background-color: #c2e297;
+}
+
+.branch-card__place {
+  margin-bottom: 10px;
+
+  @include font(12px, 500, 1.86, 0.04em);
+  color: #000000;
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 1.86, 0.04em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 500, 1.86, 0.04em);
+  }
+}
+
+.branch-card__description {
+  margin-bottom: 25px;
+
+  @include font(12px, 500, 1.5, 0.04em);
+  color: #907e82;
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 1.5, 0.04em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 500, 1.5, 0.04em);
+  }
+}
+
+// Our Branch working hours
+.branch-card__working-hours {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.branch-card__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.branch-card__weekdays {
+  display: block;
+  @include font(12px, 500, 1.86, 0.03em);
+  color: #000000;
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 1.86, 0.03em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 500, 1.86, 0.03em);
+  }
+}
+
+.branch-card__hours {
+  @include font(12px, 500, 1.86, 0.04em);
+  color: var(--secondary-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 1.86, 0.04em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 500, 1.86, 0.04em);
+  }
+}
+
+// Our Branch card contacts
+.branch-card__contacts-list {
+  margin-top: 25px;
+}
+
+.branch-card__contacts {
+  @include font(12px, 500, 1.5, 0.04em);
+  color: #907e82;
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 500, 1.5, 0.04em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 500, 1.5, 0.04em);
+  }
+}
+
+// Our location buttons
+.locations__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.locations__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

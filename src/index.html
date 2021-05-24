@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Ice cream is a sweetened frozen food typically eaten as a snack or dessert." />
+    <meta name="keywords" content="ice cream, ice cream, ice cream near me" />
+    <title>Ice cream made with passion</title>
+    <link rel="icon" href="./favicon-32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript">
+      function up() {
+        var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+        if (top > 0) {
+          window.scrollBy(0, ((top + 100) / -10));
+          t = setTimeout('up()', 20);
+        } else clearTimeout(t);
+        return false;
+      }
+    </script>
+
+    </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/feedback.html"></include>
+      <include src="./partials/locations.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+
+    <include src="./partials/back-top.html"></include>
+
+    <include src="./partials/modal-products.html"></include>
+
+    <include src="./partials/modal-about.html"></include>
+    <include src="./partials/modal-location-google-map.html"></include>
+    <include src="./partials/modal-franchise-window.html"></include>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src=./js/products-modal-1.js></script>
+    <script src=./js/products-modal-2.js></script>
+    <script src=./js/products-modal-3.js></script>
+    <script src=./js/about-modal.js></script>
+    <script src=./js/our-locations-modal.js></script>
+    <script src=./js/franchise-modal.js></script>
+    <script src="./index.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $('.feedback__container').slick({
+        dots: true,
+        autoplay: true,
+      });
+    </script>
+    <script>
+      $('.google-maps').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        dots: true,
+      });
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.google-maps',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#menu").on("click", "a", function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<section class="section-location" id="locations">
+  <div class="picture-thumb">
+    <picture>
+      <source
+        srcset="
+          ./images/location/location-bg-desktop-1x.webp 1280w,
+          ./images/location/location-bg-desktop-2x.webp 2560w
+        "
+        type="image/webp"
+        media="(min-width: 1280px)"
+        sizes="(min-width: 1280px) 1280px, 100vw"
+      />
+
+      <source
+        srcset="
+          ./images/location/location-bg-desktop-1x.png 1280w,
+          ./images/location/location-bg-desktop-2x.png 2560w
+        "
+        media="(min-width: 1280px)"
+        sizes="(min-width: 1280px) 1280px, 100vw"
+      />
+
+      <img src="./images/location/location-bg-desktop-1x.png" alt="background image" />
+    </picture>
+  </div>
+  <div class="location-container container">
+    <h2 class="visually-hidden">Our Cafe branch locations</h2>
+    <ul class="branch-cards list">
+      <li class="branch-card">
+        <p class="branch-card__type">cafe</p>
+        <p class="branch-card__place">Chicago</p>
+        <p class="branch-card__description">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+
+        <ul class="branch-card__working-hours list">
+          <li class="branch-card__item">
+            <span class="branch-card__weekdays">Monday - Friday</span>
+            <span class="branch-card__hours">06:00 AM - 10:00 PM</span>
+          </li>
+          <li class="branch-card__item">
+            <span class="branch-card__weekdays">Saturday - Sunday</span>
+            <span class="branch-card__hours">08:00 AM - 16:00 PM</span>
+          </li>
+        </ul>
+
+        <ul class="branch-card__contacts-list list">
+          <li>
+            <a class="branch-card__contacts link" href="tel:+610383766284">+61(0) 383 766 284 </a>
+          </li>
+          <li>
+            <a class="branch-card__contacts link" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li class="branch-card">
+        <p class="branch-card__type branch-card__type--green">foodtruck</p>
+        <p class="branch-card__place">Los Angeles</p>
+        <p class="branch-card__description">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+
+        <ul class="branch-card__working-hours list">
+          <li class="branch-card__item">
+            <span class="branch-card__weekdays">Monday - Friday</span>
+            <span class="branch-card__hours">06:00 AM - 10:00 PM</span>
+          </li>
+          <li class="branch-card__item">
+            <span class="branch-card__weekdays">Saturday - Sunday</span>
+            <span class="branch-card__hours">08:00 AM - 16:00 PM</span>
+          </li>
+        </ul>
+
+        <ul class="branch-card__contacts-list list">
+          <li>
+            <a class="branch-card__contacts link" href="tel:+610383766284">+61(0) 383 766 284 </a>
+          </li>
+          <li>
+            <a class="branch-card__contacts link" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li class="branch-card">
+        <p class="branch-card__type">cafe</p>
+        <p class="branch-card__place">New York</p>
+        <p class="branch-card__description">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+
+        <ul class="branch-card__working-hours list">
+          <li class="branch-card__item">
+            <span class="branch-card__weekdays">Monday - Friday</span>
+            <span class="branch-card__hours">06:00 AM - 10:00 PM</span>
+          </li>
+          <li class="branch-card__item">
+            <span class="branch-card__weekdays">Saturday - Sunday</span>
+            <span class="branch-card__hours">08:00 AM - 16:00 PM</span>
+          </li>
+        </ul>
+
+        <ul class="branch-card__contacts-list list">
+          <li>
+            <a class="branch-card__contacts link" href="tel:+610383766284">+61(0) 383 766 284 </a>
+          </li>
+          <li>
+            <a class="branch-card__contacts link" href="mailto:noreply@envato.com"
+              >noreply@envato.com</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul class="locations__list list">
+      <li class="locations__item">
+        <button class="locations__button button button--red" type="button" data-locations-open>
+          <span>Our Locations</span>
+          <svg class="locations__btn-icon">
+            <use width="7" height="10" href="./images/sprite.svg#arrow-white"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="locations__item">
+
+        <button class="locations__button-white button button--white" type="button" data-franchise-open>
+
+          <span>Franchise</span
+          ><svg class="locations__btn-icon">
+            <use width="7" height="10" href="./images/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
