@@ -167,12 +167,15 @@
   }
 
   &__btn {
-    background-color: transparent;
     height: 40px;
     width: 40px;
     padding: 0;
-    border: none;
     border-radius: 50%;
+
+    &:focus,
+    &:hover {
+      border: 2px solid #d41443;
+    }
   }
 
   //   РАЗМЕТКА ПОД ТАБЛЕТ
