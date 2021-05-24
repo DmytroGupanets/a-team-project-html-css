@@ -87,7 +87,7 @@
 .modal-about__title {
   margin-bottom: 20px;
 
-  font-family: 'Titan One', sans-serif;
+  font-family: var(--accent-font-family);
   @include font(28px, 500, 1.15, 0.04em);
   color: var(--accent-color);
   text-transform: uppercase;
@@ -115,7 +115,7 @@
 }
 
 .modal-about__text_bolt {
-  font-family: 'Titan One', sans-serif;
+  font-family: var(--accent-font-family);
   @include font(16px, 500, 1.15, 0.04em);
   color: var(--accent-color);
   text-transform: uppercase;
