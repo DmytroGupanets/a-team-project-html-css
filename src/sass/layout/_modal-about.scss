@@ -30,7 +30,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    overflow: hidden;
     border-radius: 10px;
     width: 550px;
   }
@@ -103,11 +102,18 @@
   @include font(14px, 400, 1.15, 0.03em);
   color: #907e82;
 
-  margin-bottom: 20px;
-
   @media screen and (min-width: 1280px) {
     @include font(16px, 500, 1.15, 0.04em);
   }
+}
+
+.modal-about__description {
+  margin-bottom: 20px;
+}
+
+.modal-about__list {
+  list-style-type: none;
+  list-style-image: url(../images/about/ice-cream-icon.png);
 }
 
 .modal-about__item:not(:last-child) {
