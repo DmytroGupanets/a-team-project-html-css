@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
+    background-color: var(--primary-text-color);
     color: var(--accent-color);
     @include font(16px, 700, 1.31, 0.03em);
     // width: 209px;
