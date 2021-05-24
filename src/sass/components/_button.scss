@@ -1,26 +1,41 @@
-.header-button {
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 22px;
+}
+.button--red {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+.button--white {
+  color: var(--accent-color);
+  background-color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: var(--accent-color);
+  }
+}
+
+.header__button {
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    cursor: pointer;
-    color: var(--accent-color);
     @include font(16px, 700, 1.31, 0.03em);
-    // width: 209px;
     width: 160px;
     height: 44px;
-    border-radius: 22px;
     margin-right: 16px;
-    border: none;
-    &:hover,
-    &:focus {
-      color: var(--primary-text-color);
-      background-color: #d41443;
-    }
   }
 }
-.button-icon {
+
+.header__button-icon {
   width: 10px;
   height: 10px;
   stroke: var(--accent-color);
@@ -30,21 +45,12 @@
   }
 }
 
-.button {
+.hero__button-red {
   @include font(8px, 400, 1.25, 0.04em);
   text-align: center;
-  color: #ffffff;
-  background-color: #d41443;
   border-radius: 20px;
   width: 62px;
   height: 24px;
-  border: none;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: #c7133e;
-  }
 
   @media screen and(min-width: 1280px) {
     & {
@@ -55,20 +61,16 @@
   }
 }
 
-.button-white {
+.hero__button-white {
+  @include font(8px, 400, 1.25, 0.04em);
   width: 82px;
-  color: #d41443;
-  background-color: #ffffff;
-
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-    color: #d41443;
-  }
+  height: 24px;
 
   @media screen and(min-width: 1280px) {
     & {
+      @include font(14px, 400, 1.29, 0.04em);
       width: 138px;
+      height: 40px;
     }
   }
 }
@@ -78,59 +80,65 @@
   align-items: center;
   justify-content: center;
   margin-top: 18px;
-  color: var(--accent-color);
-  background-color: var(--primary-text-color);
   @include font(14px, 700, 1.28, 0.03em);
   width: 176px;
   height: 44px;
-  border: none;
-  border-radius: 22px;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: #ecebeb;
-  }
 
   @media screen and (min-width: 768px) {
-    font-size: 16px;
-    line-height: 1.31;
-    margin-top: 62px;
+    & {
+      @include font(16px, 700, 1.31, 0.03em);
+      margin-top: 62px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: 42px;
-    margin-top: 44px;
+    & {
+      margin-left: 42px;
+      margin-top: 44px;
+    }
   }
 }
 
-.about-button__icon {
+.about__button-icon {
   width: 8px;
   height: 16px;
   margin-left: 14px;
 }
 
-.location__button {
-  padding: 13px 30px;
-  border-style: none;
-  border-radius: 22px;
-  background-color: #d41342;
+.locations__button {
   @include font(16px, 700, 1.31, 0.03em);
-  color: var(--primary-text-color);
-  cursor: pointer;
+  width: 162px;
+  height: 44px;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 192px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 198px;
+    }
+  }
 }
 
-.location__button-white {
-  padding: 13px 30px;
-  border-style: none;
-  border-radius: 22px;
-  background-color: var(--primary-text-color);
+.locations__button-white {
   @include font(16px, 700, 1.31, 0.03em);
-  color: var(--accent-color);
-  cursor: pointer;
+  width: 162px;
+  height: 44px;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 174px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 180px;
+    }
+  }
 }
 
 .locations__btn-icon {
+  stroke: var(--accent-color);
   margin-left: 8px;
   width: 7px;
   height: 10px;
