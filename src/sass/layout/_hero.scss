@@ -27,11 +27,7 @@
         height: 442px;
       }
     }
-    @media screen and (min-width: 768px) {
-      & {
-        height: 311px;
-      }
-    }
+
     @media screen and (min-width: 1280px) {
       & {
         height: 577px;
@@ -249,7 +245,6 @@
         margin-left: 39px;
         width: 324px;
         height: 311px;
-        // margin-top: 31px;
       }
     }
     @media screen and (min-width: 1280px) {
@@ -257,7 +252,6 @@
         margin-left: 0;
         width: 538px;
         height: 538px;
-        // margin-top: 52px;
       }
     }
   }
