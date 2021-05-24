@@ -10,11 +10,13 @@
 
 .modal-about {
   position: absolute;
-  top: 136%;
+  top: 50%;
   left: 50%;
   width: 80vw;
+  height: 80vh;
+  overflow-y: scroll;
 
-  padding: 20px 20px 0 20px;
+  padding: 20px;
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,18 +26,17 @@
   border: 5px solid var(--secondary-color);
 
   .franchise-backdrop--is-hidden & {
-    top: 50%;
     transform: translate(-50%, -50%) scale(0.4);
   }
 
   @media screen and (min-width: 768px) {
-    top: 61%;
     overflow: hidden;
     border-radius: 10px;
+    width: 550px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 58%;
+    width: 700px;
     padding: 40px 40px;
     border-radius: 20px;
   }
@@ -97,7 +98,8 @@
   }
 }
 
-.modal-about__text {
+.modal-about__text,
+.modal-about__description {
   @include font(14px, 400, 1.15, 0.03em);
   color: #907e82;
 
@@ -106,6 +108,10 @@
   @media screen and (min-width: 1280px) {
     @include font(16px, 500, 1.15, 0.04em);
   }
+}
+
+.modal-about__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .modal-about__text_bolt {
