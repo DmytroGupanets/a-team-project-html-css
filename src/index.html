@@ -36,7 +36,17 @@
       rel="stylesheet"
     />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  </head>
+    <script type="text/javascript">
+      function up() {
+        var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+        if (top > 0) {
+          window.scrollBy(0, ((top + 100) / -10));
+          t = setTimeout('up()', 20);
+        } else clearTimeout(t);
+        return false;
+      }
+    </script>
+    </head>
   <body>
     <include src="./partials/header.html"></include>
     <main>
@@ -93,5 +103,16 @@
         focusOnSelect: true,
       });
     </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#menu").on("click", "a", function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
+
   </body>
 </html>
