@@ -121,15 +121,22 @@
 .feedback__container .slick-dots {
   left: -5px;
 }
+
+.feedback__container .slick-dots li button {
+  padding: 0;
+}
+
 .feedback__container .slick-dots li button:before {
   font-size: 14px;
 }
 .feedback__container .slick-dots li.slick-active button:before {
   content: ' ';
-  background-image: url(../images/home.svg);
-  background-size: cover;
+  background-image: url('../images/home.svg');
+  background-size: 12px 12px;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 1;
-  width: 13px;
-  height: 12px;
+  padding: 0;
+  width: 18px;
+  height: 18px;
 }

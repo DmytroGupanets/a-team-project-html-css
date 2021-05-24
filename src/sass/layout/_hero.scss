@@ -21,7 +21,7 @@
     z-index: -1;
     background-color: var(--primary-bg-color);
     display: block;
-    width: 100vw;
+    width: 100%;
     @media screen and (max-width: 767px) {
       & {
         height: 442px;
@@ -266,6 +266,10 @@
     margin-left: 103px;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
     @media screen and (min-width: 1280px) {
       & {
         margin-left: 170px;

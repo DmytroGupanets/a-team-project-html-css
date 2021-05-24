@@ -1,0 +1,284 @@
+.franchise-modal-open {
+  overflow: hidden;
+}
+
+.backdrop.franchise-backdrop--is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+// Modal window general properties
+.modal__franchise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  padding: 30px 20px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 310px;
+
+  background-color: var(--secondary-bg-color);
+  box-sizing: content-box;
+  border: 5px solid var(--secondary-color);
+
+  .franchise-backdrop--is-hidden & {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 550px;
+
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 700px;
+    padding: 40px 40px;
+    border-radius: 20px;
+  }
+}
+
+// Close button
+.franchise__close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+
+  padding: 0;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+
+  border: 2px solid rgba(218, 37, 97, 0.39);
+  border-radius: 50%;
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
+  z-index: 1;
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 4px;
+    top: 4px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 6px;
+    top: 6px;
+  }
+}
+
+.close-btn__svg {
+  width: 15px;
+  height: 15px;
+  pointer-events: none;
+}
+
+// Form title
+.franchise__title {
+  margin-bottom: 20px;
+
+  font-family: 'Titan One', sans-serif;
+  @include font(28px, 500, 1.15, 0.04em);
+  color: var(--accent-color);
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    @include font(34px, 500, 1.15, 0.04em);
+  }
+}
+
+.franchise__text {
+  @include font(14px, 400, 1.15, 0.03em);
+  color: #907e82;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 500, 1.15, 0.04em);
+  }
+}
+
+.franchise__company-name {
+  font-family: 'Titan One', sans-serif;
+  @include font(16px, 500, 1.15, 0.04em);
+  color: var(--accent-color);
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1280px) {
+    @include font(18px, 500, 1.45, 0.04em);
+  }
+}
+
+// Form field block
+.form-field {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.form-field__name {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: -20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: -30px;
+  }
+}
+
+.form-field--inline {
+  margin-left: 10px;
+  flex-basis: calc((100% - 20px) / 2);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+.form-field__franchise-address {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.form-field__states {
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+  }
+}
+
+.form-field__input.states-input {
+  width: 130px;
+}
+
+.form-field__contacts-wrapper {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin-left: -30px;
+  }
+}
+
+.form-field__contacts {
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+.form-field__label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  @include font(12px, 400, 1.17, 0.04em);
+  color: #000000;
+
+  @media screen and (min-width: 1280px) {
+    @include font(14px, 400, 1.17, 0.04em);
+  }
+}
+
+.form-field__input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+
+  border: 1px solid #a1a1a1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include font(14px, 400, 1.17, 0.04em);
+
+  &:focus-within,
+  &:hover {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+}
+
+.form-field__gender-select {
+  @include font(14px, 400, 1.17, 0.04em);
+  border: 1px solid #a1a1a1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  height: 30px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+/* Comment field */
+.form-field__comment-input {
+  box-sizing: border-box;
+  padding: 6px;
+  width: 100%;
+
+  resize: none;
+  border: 1px solid #a1a1a1;
+  border-radius: 8px;
+
+  @include font(14px, 400, 1.17, 0.04em);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus-within,
+  &:hover {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+}
+
+/* SUBMIT BUTTON */
+
+.modal-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modal-submit__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 55px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: hidden;
+  cursor: pointer;
+}

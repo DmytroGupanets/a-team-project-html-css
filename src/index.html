@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Ice cream is a sweetened frozen food typically eaten as a snack or dessert." />
+    <meta name="keywords" content="ice cream, ice cream, ice cream near me" />
     <title>Ice cream made with passion</title>
+    <link rel="icon" href="./favicon-32.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
       integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,8 +39,20 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  </head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript">
+      function up() {
+        var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+        if (top > 0) {
+          window.scrollBy(0, ((top + 100) / -10));
+          t = setTimeout('up()', 20);
+        } else clearTimeout(t);
+        return false;
+      }
+    </script>
+
+    </head>
   <body>
     <include src="./partials/header.html"></include>
     <main>
@@ -50,9 +66,12 @@
     </main>
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal-location-google-map.html"></include>
+    <include src="./partials/modal-franchise-window.html"></include>
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./js/mobile-menu.js"></script>
     <script src=./js/our-locations-modal.js></script>
+    <script src=./js/franchise-modal.js></script>
     <script src="./index.js"></script>
 
     <script
@@ -90,5 +109,16 @@
         focusOnSelect: true,
       });
     </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#menu").on("click", "a", function (event) {
+          event.preventDefault();
+          var id = $(this).attr('href'),
+            top = $(id).offset().top;
+          $('body,html').animate({ scrollTop: top }, 1500);
+        });
+      });
+    </script>
+
   </body>
 </html>
