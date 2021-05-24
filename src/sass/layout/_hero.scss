@@ -1,6 +1,4 @@
 .hero {
-  overflow-x: hidden;
-
   @media screen and (max-width: 767px) {
     & {
       height: 442px;
@@ -39,6 +37,7 @@
     display: flex;
     @media screen and (max-width: 767px) {
       height: 442px;
+      overflow-x: hidden;
       // padding-top: 83px;
     }
     @media screen and (min-width: 768px) {
