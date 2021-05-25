@@ -31,11 +31,19 @@
 .about {
   &__suptitle {
     font-family: var(--accent-font-family);
-    @include font(30px, 400, 1.13, 0.04em);
+    @include font(18px, 400, 1.16, 0.04em);
     text-align: center;
     text-transform: uppercase;
     color: var(--secondary-color);
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      @include font(36px, 400, 1.15, 0.04em);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(30px, 400, 1.13, 0.04em);
+    }
   }
 
   &__title {
