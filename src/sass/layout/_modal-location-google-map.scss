@@ -72,11 +72,11 @@
   background-color: var(--primary-bg-color);
   cursor: pointer;
   z-index: 1;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
     background-color: var(--accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   @media screen and (min-width: 768px) {
@@ -236,6 +236,8 @@
   @media screen and (min-width: 768px) {
     width: 170px;
   }
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
