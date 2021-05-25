@@ -122,22 +122,6 @@
   }
   &__milk-wrapper {
     display: flex;
-
-    // &__milk-img {
-    //   @media screen and(max-width: 767px) {
-    //     & {
-    //       display: none;
-    //     }
-    //   }
-    // }
-
-    // @media screen and (min-width: 768px) {
-    //   width: 220px;
-    // }
-
-    // @media screen and (min-width: 1280px) {
-    //   width: 328px;
-    // }
   }
 
   &__milk-wrapper::before {
@@ -208,7 +192,6 @@
   // BUTTONS
 
   &__btn-list {
-    // z-index: 3;
     display: flex;
 
     @media screen and (min-width: 768px) {
