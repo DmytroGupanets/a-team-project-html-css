@@ -7,6 +7,10 @@
   background-color: var(--accent-color);
   color: var(--primary-text-color);
   outline: 2px solid transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: #c7133e;
@@ -16,6 +20,9 @@
 .button--white {
   color: var(--accent-color);
   background-color: var(--primary-text-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -41,6 +48,9 @@
   width: 10px;
   height: 10px;
   stroke: var(--accent-color);
+
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .header-button:hover &,
   .header-button:focus & {
     stroke: #ffffff;

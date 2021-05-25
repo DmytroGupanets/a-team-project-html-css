@@ -37,12 +37,30 @@
   &__container {
     position: relative;
     display: flex;
+
     @media screen and (max-width: 767px) {
       height: 442px;
     }
 
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/hero/hero-girl-tablet.png');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/hero/hero-girl-tablet@2x.png');
+      }
+    }
+
     @media screen and (min-width: 1280px) {
+      background-image: url('../images/hero/hero-girl-desktop.png');
+      background-repeat: no-repeat;
+      background-position: bottom right;
       height: 577px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/hero/hero-girl-desktop@2x.png');
+      }
     }
   }
   &__left-side {
@@ -55,13 +73,13 @@
   // TEXT ELEMENTS
 
   &__title {
-    max-width: 180px;
+    max-width: 230px;
     margin-top: 137px;
     margin-bottom: 19px;
 
     font-family: var(--accent-font-family);
 
-    @include font(22px, 400, 1.14, 0.04em);
+    @include font(26px, 400, 1.14, 0.04em);
     text-transform: uppercase;
     color: var(--primary-text-color);
 
@@ -69,6 +87,7 @@
       & {
         @include font(22px, 400, 1.14, 0.04em);
         margin-top: 15px;
+        max-width: 162px;
       }
     }
     @media screen and(min-width: 1280px) {
@@ -103,19 +122,51 @@
   }
   &__milk-wrapper {
     display: flex;
-  }
-  &__milk-img {
-    @media screen and(max-width: 767px) {
-      & {
-        display: none;
-      }
-    }
-    // @media screen and(min-width: 1280px) {
-    //   & {
-    //     width: 188px;
+
+    // &__milk-img {
+    //   @media screen and(max-width: 767px) {
+    //     & {
+    //       display: none;
+    //     }
     //   }
     // }
+
+    // @media screen and (min-width: 768px) {
+    //   width: 220px;
+    // }
+
+    // @media screen and (min-width: 1280px) {
+    //   width: 328px;
+    // }
   }
+
+  &__milk-wrapper::before {
+    content: '';
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/hero/hero-milk-tablet.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 192px;
+      height: 128px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/hero/hero-milk-tablet@2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url('../images/hero/hero-milk-desktop.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 307px;
+      height: 180px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/hero/hero-milk-desktop@2x.png');
+      }
+    }
+  }
+
   &__description {
     display: inline-block;
     align-self: flex-end;
@@ -130,32 +181,26 @@
     }
     @media screen and (min-width: 1280px) {
       & {
-        margin-left: 30px;
-        max-width: 160px;
+        max-width: 200px;
         @include font(14px, 400, 1.4, 0.03em);
       }
     }
 
-    &::after {
-      content: '';
+    &-link {
       display: block;
       width: 18px;
       height: 18px;
-      border-radius: 50%;
-      background-color: #ffffff;
+
       background-image: url('../images/hero/hero-arrow-right.png');
       background-repeat: no-repeat;
-      background-position: center;
-      padding: 0;
-      margin-top: 7px;
-      margin-bottom: 6px;
+      background-size: contain;
+      margin-top: 20px;
+
       @media screen and (min-width: 1280px) {
-        & {
-          margin-top: 20px;
-          margin-bottom: 11px;
-          width: 26px;
-          height: 26px;
-        }
+        background-image: url('../images/hero/hero-arrow-right-desktop.png');
+        width: 26px;
+        height: 26px;
+        margin-top: 20px;
       }
     }
   }
@@ -233,6 +278,7 @@
     height: 344px;
     border-radius: 50%;
     background-color: var(--secondary-color);
+    z-index: -1;
 
     margin-left: 16px;
     margin-top: 27px;
@@ -246,7 +292,7 @@
     }
     @media screen and (min-width: 1280px) {
       & {
-        margin-left: 0;
+        margin-left: -15px;
         width: 538px;
         height: 538px;
       }
@@ -254,7 +300,7 @@
   }
   &__number-wrapper {
     margin-top: 12px;
-    margin-left: 103px;
+    margin-left: 72px;
     display: flex;
     flex-direction: column;
     @media screen and (max-width: 767px) {
@@ -263,14 +309,12 @@
 
     @media screen and (min-width: 1280px) {
       & {
-        margin-left: 170px;
+        margin-left: 62px;
         margin-top: 74px;
       }
     }
   }
-  &__numbers-item {
-    display: flex;
-  }
+
   &__numbers-item:not(:last-child) {
     margin-bottom: 65px;
     @media screen and (min-width: 1280px) {
@@ -300,9 +344,28 @@
     }
   }
 
+  &__number--cafes {
+    position: absolute;
+    left: 13px;
+    bottom: -11px;
+  }
+
+  &__number--food-trucks {
+    position: absolute;
+    left: -5px;
+    bottom: -11px;
+    width: 51px;
+
+    @media screen and (min-width: 1280px) {
+      left: -25px;
+      bottom: -17px;
+      width: 80px;
+    }
+  }
+
   &__number-16 {
     width: 43px;
-    // height: 44px;
+
     z-index: 4;
     @media screen and (min-width: 1280px) {
       & {
@@ -311,10 +374,8 @@
     }
   }
   &__number-23 {
-    width: 51px;
-    // height: 43px;
     z-index: 4;
-    transform: translateX(16%);
+
     @media screen and (min-width: 1280px) {
       & {
         width: 92px;
@@ -323,8 +384,8 @@
   }
 
   &__number-descr {
-    position: absolute;
-    transform: translatex(-100%);
+    position: relative;
+
     display: inline-block;
     z-index: 3;
     @include font(8px, 400, 1.25, 0.04em);
@@ -343,13 +404,36 @@
     }
   }
 
-  &__number-descr::after {
+  &__number-23::after {
     content: '';
     display: block;
     position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
+    z-index: -1;
+    top: -4px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary-text-color);
+
+    @media screen and (min-width: 1280px) {
+      & {
+        z-index: -1;
+        top: -5px;
+        right: 19px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__number-16::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -4px;
+    right: 2px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
