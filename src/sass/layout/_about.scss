@@ -30,6 +30,10 @@
 
 .about {
   &__suptitle {
+    &::selection {
+      color: var(--primary-text-color);
+      background-color: var(--primary-bg-color);
+    }
     font-family: var(--accent-font-family);
     @include font(18px, 400, 1.16, 0.04em);
     text-align: center;
@@ -47,6 +51,10 @@
   }
 
   &__title {
+    &::selection {
+      color: var(--primary-text-color);
+      background-color: var(--primary-bg-color);
+    }
     font-family: var(--accent-font-family);
     @include font(34px, 400, 1.15, 0.04em);
     text-align: center;
@@ -83,6 +91,11 @@
 }
 
 .about__text {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
+
   @include font(12px, 500, 1.62, 0.03em);
   padding-left: 30px;
   padding-right: 30px;

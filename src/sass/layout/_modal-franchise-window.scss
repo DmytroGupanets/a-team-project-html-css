@@ -91,6 +91,11 @@
 
 // Form title
 .franchise__title {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
+
   margin-bottom: 20px;
 
   font-family: var(--accent-font-family);
@@ -105,6 +110,11 @@
 }
 
 .franchise__text {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
+
   @include font(14px, 400, 1.15, 0.03em);
   color: #907e82;
 
@@ -116,6 +126,11 @@
 }
 
 .franchise__company-name {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
+
   font-family: var(--accent-font-family);
   @include font(16px, 500, 1.15, 0.04em);
   color: var(--accent-color);
@@ -199,6 +214,11 @@
 }
 
 .form-field__label {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
+
   display: block;
   margin-bottom: 5px;
   padding-left: 5px;

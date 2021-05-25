@@ -100,6 +100,10 @@
 
 .modal-about__text,
 .modal-about__description {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
   @include font(14px, 400, 1.15, 0.03em);
   color: #907e82;
 
