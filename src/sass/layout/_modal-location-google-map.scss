@@ -33,7 +33,7 @@
   box-sizing: content-box;
   border: 5px solid var(--secondary-color);
 
-  .backdrop--is-hidden & {
+  .locations-backdrop--is-hidden & {
     top: 50%;
     transform: translate(-50%, -50%) scale(0.4);
   }

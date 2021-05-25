@@ -13,6 +13,8 @@
   top: 50%;
   left: 50%;
   width: 60vw;
+  height: 55vh;
+  overflow-y: scroll;
 
   padding: 20px 20px 0 20px;
   border-radius: 5px;
@@ -25,6 +27,7 @@
 
   @media screen and (min-width: 768px) {
     top: 50%;
+    height: auto;
     overflow: hidden;
     border-radius: 10px;
   }
