@@ -158,6 +158,11 @@
   }
 
   &__text {
+    &::selection {
+      color: black;
+      background-color: var(--primary-bg-color);
+    }
+
     padding-right: 40px;
     padding-left: 40px;
     margin-bottom: 30px;

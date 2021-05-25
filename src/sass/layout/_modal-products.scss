@@ -82,6 +82,11 @@
 }
 
 .modal-products__title {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
+
   margin-bottom: 20px;
 
   font-family: 'Titan One', sans-serif;
@@ -96,12 +101,22 @@
 }
 
 .modal-products__text {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
+
   @include font(14px, 400, 1.15, 0.03em);
   color: #907e82;
 
   margin-bottom: 20px;
 
   &-caption {
+    &::selection {
+      color: var(--primary-text-color);
+      background-color: var(--primary-bg-color);
+    }
+
     @include font(14px, 400, 1.15, 0.03em);
     color: #907e82;
 
@@ -123,6 +138,11 @@
 }
 
 .modal-products__text_bolt {
+  &::selection {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+  }
+
   font-family: 'Titan One', sans-serif;
   @include font(16px, 500, 1.15, 0.04em);
   color: var(--accent-color);
