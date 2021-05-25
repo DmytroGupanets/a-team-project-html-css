@@ -55,6 +55,9 @@
     &__link {
       @include font(14px, 700, 1.28, 0.03em);
       color: var(--primary-text-color);
+
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
       &:hover,
       &:focus {
         color: rgba(212, 20, 67, 1);
@@ -84,7 +87,9 @@
   pointer-events: none;
   background-color: #e17992;
   transform: translateX(100%);
-  transition: all 250ms linear;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 768px) {
     max-width: 450px;
     z-index: 12;
@@ -114,6 +119,10 @@
   margin-bottom: 20px;
   border: none;
   margin-top: 60px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     color: var(--primary-text-color);
@@ -152,6 +161,7 @@
   &__link {
     @include font(14px, 700, 1.28, 0.03em);
     color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       color: rgba(212, 20, 67, 1);
