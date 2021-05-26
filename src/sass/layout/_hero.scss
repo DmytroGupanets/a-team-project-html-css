@@ -46,9 +46,11 @@
       background-image: url('../images/hero/hero-girl-tablet.png');
       background-repeat: no-repeat;
       background-position: bottom right;
+      background-size: 168px 133px;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/hero/hero-girl-tablet@2x.png');
+        background-size: 168px 133px;
       }
     }
 
@@ -56,10 +58,12 @@
       background-image: url('../images/hero/hero-girl-desktop.png');
       background-repeat: no-repeat;
       background-position: bottom right;
+      background-size: 293px 232px;
       height: 577px;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/hero/hero-girl-desktop@2x.png');
+        background-size: 293px 232px;
       }
     }
   }
@@ -130,11 +134,15 @@
       background-image: url('../images/hero/hero-milk-tablet.png');
       background-repeat: no-repeat;
       background-position: center;
-      width: 192px;
-      height: 128px;
+      background-size: contain;
+      width: 124px;
+      height: 126px;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/hero/hero-milk-tablet@2x.png');
+        background-size: contain;
+        width: 124px;
+        height: 126px;
       }
     }
 
@@ -142,11 +150,15 @@
       background-image: url('../images/hero/hero-milk-desktop.png');
       background-repeat: no-repeat;
       background-position: center;
-      width: 307px;
-      height: 180px;
+      background-size: contain;
+      width: 188px;
+      height: 191px;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/hero/hero-milk-desktop@2x.png');
+        background-size: contain;
+        width: 188px;
+        height: 191px;
       }
     }
   }
